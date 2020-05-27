@@ -16,6 +16,6 @@
 
 ## TODO
 
--   [ ] ts
--   [ ] lint
+-   [x] ts
+-   [x] lint
 -   [ ] emotion 적용 테스트
