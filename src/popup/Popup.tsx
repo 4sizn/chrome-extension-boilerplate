@@ -2,8 +2,11 @@ import * as React from "react";
 
 export function Popup() {
     // Sends the `popupMounted` event
+
     React.useEffect(() => {
-        chrome.runtime.sendMessage({ popupMounted: true });
+        if (chrome.tabs) {
+            chrome.runtime.sendMessage({ popupMounted: true });
+        }
     }, []);
 
     // Renders the component tree

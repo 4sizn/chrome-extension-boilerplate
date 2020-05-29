@@ -4,6 +4,7 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
+        "dev-server": "webpack-dev-server -w --config webpack.dev.js",
         "start": "webpack -w --config webpack.dev.js",
         "build": "webpack --config webpack.prod.js"
     },
@@ -29,6 +30,7 @@
         "typescript": "^3.7.5",
         "webpack": "^4.41.6",
         "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.11.0",
         "webpack-merge": "^4.2.2"
     }
 }
